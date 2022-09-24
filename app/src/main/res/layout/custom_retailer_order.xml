@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_white"
+    android:layout_marginVertical="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:id="@+id/c_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Date : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+
+            <TextView
+                android:id="@+id/invoice_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Invoice No : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="accepted"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/round_status_bg"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textAllCaps="true"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:text="Invoice"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/lato_regular"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            />
+
+
+        <Button
+            android:id="@+id/btn_details"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_33sdp"
+            android:text="View Details "
+            android:background="@drawable/sale_cart_bg"
+            android:fontFamily="@font/lato_regular"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginVertical="@dimen/_8sdp">
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:background="@drawable/background_white"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorBlack"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="@drawable/round_bg"
+                android:hint="From Shop"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/spinner_from"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="visible"
+                android:layout_weight="1"/>
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="@drawable/round_bg"
+                android:hint="To Shop"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/spinner_to"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_8sdp"/>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_view_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
